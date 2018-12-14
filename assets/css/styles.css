@@ -1,0 +1,79 @@
+body {
+  background-color: #d0c49f;
+  /** #f4d49e #e8e5d4 #d0c49f #a9997d #ceb697 #c3bbad #362F24 #B2A38A */ }
+
+a > .fab {
+  color: #e8e5d4;
+  font-size: 1.5em;
+  text-decoration: none; }
+
+p {
+  font-size: 1.1em; }
+
+.container-fluid {
+  padding: 0; }
+
+.dropdown-menu {
+  background-color: #a9997d; }
+
+.dropdown-item {
+  color: #e8e5d4;
+  font-weight: bold; }
+
+.market-icon {
+  max-height: 50px; }
+
+.navbar {
+  padding: 0; }
+
+.bg-transparent {
+  border: none !important; }
+
+.nazhifa-table table a {
+  text-decoration: none;
+  color: #e8e5d4; }
+
+figcaption a {
+  color: #362F24;
+  text-decoration: none; }
+
+figcaption a:hover {
+  color: #a9997d;
+  text-decoration: none; }
+
+.four-o {
+  margin: 10px auto;
+  max-width: 600px;
+  text-align: center; }
+
+.four-o img {
+  max-height: 200px; }
+
+.table-prehist,
+.table-prehist > td,
+.table-prehist > th {
+  background-color: #a9997d; }
+
+.table-hover .table-prehist:hover {
+  background-color: #B2A38A; }
+
+.table-hover .table-prehist:hover > td,
+.table-hover .table-prehist:hover > th {
+  background-color: #B2A38A; }
+
+.media a {
+  color: #362F24 !important;
+  text-decoration: none; }
+
+.media a:hover {
+  color: #a9997d !important; }
+
+#headAccountBar {
+  background-color: #362F24; }
+
+#headNav {
+  font-size: 1.3em !important;
+  font-weight: 900; }
+
+#Headed img {
+  max-height: 200px; }
