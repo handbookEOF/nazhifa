@@ -29,12 +29,14 @@ function islamDB(){
 function dwnDB(){
 	idtab = "downloadable";
     hdr = "Downloadable";
-    para = "Bagi kamu yang ingin menambah pengetahuan dan resource terkait teknologiatau disiplin ilmu lainnya, silahkan akses tautan-tautan dibawah ini. Tautan yang kami himpun berikut menyediakan resource berbasis open source yang mana dapat kamu unduh secara gratis.";
+    para = "Bagi kamu yang ingin menambah pengetahuan dan resource terkait teknologi atau disiplin ilmu lainnya, silahkan akses tautan-tautan dibawah ini. Tautan yang kami himpun berikut menyediakan resource berbasis open source yang mana dapat kamu unduh secara gratis.";
 	arrDB = [
 		['Linux Training', 'http://www.linux-training.be/', 'Paul Cobbaut', na],
 		['Bookfi', 'http://en.bookfi.net', 'Unknown', na],
 		['Goal Kicker', 'https://goalkicker.com', 'Stackoverflow', na],
 		['Internet Archive', 'https://archive.org/', 'The Internet Archive', na],
+		['Paul\'s Online Notes', 'http://tutorial.math.lamar.edu', 'Paul Dawkins', na],
+		['MIT OpenCourseWare', 'https://ocw.mit.edu/courses/', 'Massachusetts Instituge of Technology', na],
 	];
 	
 	showTable(arrDB, idtab, para, hdr);
