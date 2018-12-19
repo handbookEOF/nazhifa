@@ -1,3 +1,9 @@
+@media (max-width: 575.98px) {
+  #islam-figcaption {
+    visibility: hidden; } }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #islam-figcaption {
+    visibility: hidden; } }
 body {
   background-color: #d0c49f;
   /** #f4d49e #e8e5d4 #d0c49f #a9997d #ceb697 #c3bbad #362F24 #B2A38A */ }
