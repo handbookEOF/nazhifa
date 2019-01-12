@@ -2,6 +2,8 @@
 Kalo ada waktu senggang coba nanti adain objek baru. 
 Jadi nanti objek objek db tinggal ngirim array yang isinya variabel-variablenya, dan cuma ngirim satu variabel array.
 Terus nanti hdr di tiadain. Tinggal ganti sama idtab cuma di caps di first letter.
+
+Note 08/01/2019: Kalo mau begitu harus pake JSON.
 */
 
 var na = "N/A";
@@ -18,9 +20,10 @@ function islamDB(){
 	arrDB = [
 		['IslamHouse', 'https://islamhouse.com/', 'Islam House', na],
 		['SunnahOnline', 'http://sunnahonline.com', 'Sunnah Online', na],
-		['ClearQuran', 'https://www.clearquran.com/', 'Talal Itani', na	],
-		['The Islamic Bulletin', 'http://www.islamicbulletin.org', un, na	],
+		['ClearQuran', 'https://www.clearquran.com/', 'Talal Itani', na],
+		['The Islamic Bulletin', 'http://www.islamicbulletin.org', un, na],
 		['Abdurrahman', 'https://abdurrahman.org/', un, na	],
+		['Islamic Scholar Imran Nazar Hosein', 'http://www.imranhosein.org/', 'Shaykh Imran Nazar Hosein', na],
 	];
 	
 	showTable(arrDB, idtab, para, hdr);
@@ -57,6 +60,7 @@ function redDB(){
 		['Sekolah Koding', 'https://sekolahkoding.com', 'Sekolah Koding', itil],
 		['HackDesign', 'https://hackdesign.org/', un, na],
 		['Feynman Lectures', 'https://www.feynmanlectures.caltech.edu', 'California Institute of Technology', na],
+		['Wolfram MathWorld', 'http://mathworld.wolfram.com/', 'Eric Weisstein', na],
 	];
 	
 	showTable(arrDB, idtab, para, hdr);
