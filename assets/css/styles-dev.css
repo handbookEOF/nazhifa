@@ -172,7 +172,7 @@ figcaption a:hover {
 
 .a_demo_four::before {
   background-color: #897c66;
-  background-image: url(/nazhifa/assets/images/down_arrow.png);
+  background-image: url(/assets/images/down_arrow.png);
   background-repeat: no-repeat;
   background-position: center center;
   content: "";
@@ -202,7 +202,7 @@ figcaption a:hover {
 #aside-content {
   margin: 0 0 20px;
   padding: 20px 10px 1px;
-  background: url(/nazhifa/assets/images/chalk-20.png);
+  background: url(/assets/images/chalk-20.png);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 0 1px 1px rgba(0, 0, 0, 0.05);
   border-radius: 0 0 5px 5px; }
 
