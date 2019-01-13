@@ -130,9 +130,9 @@ figcaption a:hover {
 #Headed img {
   max-height: 200px; }
 
-#Blog {
-  padding: 40px 68px; }
-
+/** #Blog {
+	padding: 40px 68px;
+} */
 .a_demo_four {
   background-color: #d0c49f;
   font-family: 'Open Sans', sans-serif;
