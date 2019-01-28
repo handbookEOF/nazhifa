@@ -6,6 +6,10 @@ Terus nanti hdr di tiadain. Tinggal ganti sama idtab cuma di caps di first lette
 Note 08/01/2019: Kalo mau begitu harus pake JSON.
 */
 
+/**
+ * BIKIN PERUBAHANNYA DI SALINANNYA AJA. JANGAN LANGSUNG DI PROJECT UTAMA
+ */
+
 var na = "N/A";
 var un = "Unknown";
 var og = "On Going"
@@ -14,6 +18,9 @@ var itil = "It is local!";
 
 
 function islamDB(){
+	/**
+	 * perlu tambah anggota array buat deskripsi tooltip
+	 */
 	idtab = "islam";
     hdr = "Islam";
     para = "Memahami pengetahuan Islam adalah kewajiban setiap muslim. Tak hanya Al-Quran dan Hadits, berbagai ilmu terkait fiqih dan syariah sehari-hari pun patut digali lebih lanjut. Memanfaatkan teknologi yang ada, kami telah menghimpun berbagai tautan yang bisa kamu akses untuk memperkaya pengetahuan dan keimananmu.";
@@ -30,6 +37,12 @@ function islamDB(){
 }
 
 function dwnDB(){
+	/**
+	 * perlu tambah anggota array buat deskripsi tooltip
+	 * KALO MAU PAKE JSON, BIARIN MASUK KE VARIABEL arrDB DI TIAP METHOD DULU
+	 * BARU NANTI UBAH LAGI TAHAP SELANJUTNYA SESUAI DENGAN STRUKTUR
+	 * PEMROGRAMAN YANG LEBIH LOOSE COUPLING
+	 */
 	idtab = "downloadable";
     hdr = "Downloadable";
     para = "Bagi kamu yang ingin menambah pengetahuan dan resource terkait teknologi atau disiplin ilmu lainnya, silahkan akses tautan-tautan dibawah ini. Tautan yang kami himpun berikut menyediakan resource berbasis open source yang mana dapat kamu unduh secara gratis.";
@@ -46,6 +59,9 @@ function dwnDB(){
 }
 
 function redDB(){
+	/**
+	 * perlu tambah anggota array buat deskripsi tooltip
+	 */
 	idtab = "read";
     hdr = "Online-Only";
     para = "Kumpulan tautan berikut ini diperuntukkan bagi kamu yang mencari tautan yang menyediakan referensi dan resource terkait dunia teknologi informatika mulai dari bahasa pemrograman, desain dan lainnya. Patut diingat bahwa tautan-tautan dibawah ini hanya meneyediakan referensi secara daring tanpa bisa diunduh.";
@@ -67,6 +83,9 @@ function redDB(){
 }
 
 function acdDB(){
+	/**
+	 * perlu tambah anggota array buat deskripsi tooltip
+	 */
 	idtab = "academic";
     hdr = "Academic";
     para = "Terkhusus kamu yang membutuhkan atau mencari tautan alamat situs yang menyediakan berbagai referensi akademik seperti jurnal ilmiah dan penelitian, kamu bisa mengakses beberapa tautan lokal yang telah kami himpun dibawah ini.";
@@ -151,9 +170,18 @@ function showTable(arr, idt, pr, hdr){
 	for (row = 0; row < arr.length; row++){
 		tr = document.createElement('tr');
 		for (col = 0; col < arr[row].length; col++){
+			/**
+			 * if array column tooltip {
+			 * 		att = createAttribute("title");
+			 * 		att.value = "Deskripsi";
+			 * } else { sisanya
+			 */
 			td = document.createElement('td');
 			tn = document.createTextNode(arr[row][col]);
 			td.appendChild(tn);
+			/**
+			 * } tutup else disini
+			 */
 			tr.appendChild(td);
 		}
 		tbody.appendChild(tr);
