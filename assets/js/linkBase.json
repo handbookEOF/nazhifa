@@ -39,7 +39,7 @@
 			{ "siteName":"Bookfi", "siteLink":"http://en.bookfi.net", "siteOwner":"Unknown", "siteDesc":""},
 			{ "siteName":"Goal Kicker", "siteLink":"https://goalkicker.com", "siteOwner":"Stackoverflow", "siteDesc":""},
 			{ "siteName":"Internet Archive", "siteLink":"https://archive.org/", "siteOwner":"The Internet Archive", "siteDesc":""},
-			{ "siteName":"Paul\'s Online Notes", "siteLink":"http://tutorial.math.lamar.edu", "siteOwner":"Paul Dawkins", "siteDesc":""},
+			{ "siteName":"Paul's Online Notes", "siteLink":"http://tutorial.math.lamar.edu", "siteOwner":"Paul Dawkins", "siteDesc":""},
 			{ "siteName":"MIT OpenCourseWare", "siteLink":"https://ocw.mit.edu/courses/", "siteOwner":"Massachusetts Instituge of Technology", "siteDesc":""}
 		]
 	},
