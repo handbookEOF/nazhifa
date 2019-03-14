@@ -27,7 +27,8 @@
 			{"siteName":"Sekolah Koding", "siteLink":"https://sekolahkoding.com", "siteOwner":"Sekolah Koding", "siteDesc":""},
 			{"siteName":"HackDesign", "siteLink":"https://hackdesign.org/", "siteOwner":"", "siteDesc":""},
 			{"siteName":"Feynman Lectures", "siteLink":"https://www.feynmanlectures.caltech.edu", "siteOwner":"California Institute of Technology", "siteDesc":""},
-			{"siteName":"Wolfram MathWorld", "siteLink":"http://mathworld.wolfram.com/", "siteOwner":"Eric Weisstein", "siteDesc":""}			
+			{"siteName":"Wolfram MathWorld", "siteLink":"http://mathworld.wolfram.com/", "siteOwner":"Eric Weisstein", "siteDesc":""},
+			{"siteName":"Veronica Karlsson", "siteLink":"https://www.ludd.ltu.se/~vk/", "siteOwner":"Veronica Karlsson", "siteDesc":""}
 		]
 	},
 	{

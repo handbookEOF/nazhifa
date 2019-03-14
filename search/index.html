@@ -17,7 +17,7 @@
 
 		<script src="https://unpkg.com/lunr/lunr.js"></script>
 
-		<title>Update</title>
+		<title>Search</title>
 	</head>
 
 	<body>
@@ -141,115 +141,29 @@
 		</header>
 
 		<main>
-			<div class="container" id="nazhifasBlog"><!-- PR: kalo mau buat id harus bener bener unik, kayaknya ada yang overridden-->
+			<div class="container my-5">
     <div class="row">
         <div class="col-sm-1"></div>
-        <div class="col-12 col-sm-6 pl-sm-5 pr-sm-3 px-3">
-            <h1>Update</h1>
-
-
-
-
-<h2>Posts</h2>
-<ul>
-  
-  
-</ul>
-        </div>
-        <div class="col-12 col-sm-4 pr-sm-5 pl-sm-3 px-3">
-            <div id="aside">
-    <div id="aside-head">
-        <div id="aside-head-content"><h5>Category</h5></div>
-        <!-- form method="get" action="/search/">
-        <fieldset>
-            <legend>Site Search</legend>
-            <label for="search-site">Search</label>
-            <input type="text" id="search-site" name="keywords" placeholder="Search..."/>
-        </fieldset>
-        </form-->
-    </div>
-    <div id="aside-content">
-        <div class="sub">
-        <h3>About this site</h3>
-        <!-- div class="sub-content">
-            <p><a href="/">Legend of Mana Info</a> strives to be the ultimate resource for all things related to the deep world of Legend of Mana. Contained within these pages is all of the knowledge I've attained throughout the many years I've played this satisfying <acronym title="Role Playing Game">RPG</acronym>. Enjoy!</p>
-        </div>
-        </div -->
-        <div class="sub">
-        <h3>Walkthrough</h3>
-        <div class="sub-content">
-            <div class="row">
-            <div class="col-xs-6">
-                <ul>
-                
-                    
-                        <li><a href="/nazhifa/categories/islam.html">Islam</a></li>
-                    
-                
-                    
-                        <li><a href="/nazhifa/categories/jekyll.html">Jekyll</a></li>
-                    
-                
-                    
-                        <li><a href="/nazhifa/categories/source.html">Sources</a></li>
-                    
-                
-                    
-                        <li><a href="/nazhifa/categories/update.html">Update</a></li>
-                    
-                
-                </ul>
-            </div>
-            <div class="col-xs-6">
-                <ul>
-                <li>
-                    <a href="/walkthrough/events/">Event List</a>
-                </li>
-                <li>
-                    <a href="/walkthrough/maps/">Maps &amp; Artifacts</a>
-                </li>
-                </ul>
-            </div>
-            </div>
-        </div>
-        </div>
-        <div class="sub">
-        <h3>Encyclopedias</h3>
-        <div class="sub-content">
-            <div class="row">
-                <div class="col-md-6">
-                    <ul>
-                    <li>
-                        <a href="/encyclopedias/monsters-pets/">Monsters/Pets</a>
-                    </li>
-                    <li>
-                        <a href="/encyclopedias/abilities-techniques/">Abilities/Techs</a>
-                    </li>
-                    <li>
-                        <a href="/encyclopedias/npcs/">NPC's</a>
-                    </li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul>
-                        <li>
-                            <a href="/encyclopedias/produce/">Produce</a>
-                        </li>
-                        <li>
-                            <a href="/encyclopedias/shops/">Shop Info</a>
-                        </li>
-                        <li>
-                            <a href="/encyclopedias/recipes/">Recipes</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <div class="col-12 col-sm-10 text-center" id="Headed">
+            
+                <a id="nazhifaHead" href="/nazhifa"><img class="img-fluid mx-auto" src="/nazhifa/assets/images/nazhifa-text.png"/></a>
+            
         </div>
     </div>
 </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-12 col-sm-10 px-sm-5 col-md-10 px-md-5">
+			<input class="form-control form-control-lg" placeholder="Search&hellip;" type="search" id="search" />
+			<div id="results" class="all-posts results">
+			</div>
         </div>
     </div>
 </div>
+
+
 		</main>
 
 		<footer>

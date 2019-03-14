@@ -1,8 +1,3 @@
-/**
- * JANGAN LANGSUNG UPLOAD DI MASTER. BIKIN BRANCH DULU BARU BANDINGIN 
- * BUAT REPOSITORY SOURCE JEKYLL NYA JUGA
- * 
- */
 function loadJSON(callback, jsp) {   
 
 	var xobj = new XMLHttpRequest();
@@ -19,14 +14,14 @@ function loadJSON(callback, jsp) {
 		}
 	};
 	xobj.send(null);  
- }
+}
  
- function init(jsonpath) {
- loadJSON(function(response) {
-  // Parsing JSON string into object
-    var links = JSON.parse(response);
-    showTable(links);
- }, jsonpath);
+function init(jsonpath) {
+	loadJSON(function(response) {
+		// Parsing JSON string into object
+		var links = JSON.parse(response);
+		showTable(links);
+	}, jsonpath);
 }
 
 function showTable(lnk){
@@ -88,4 +83,3 @@ function showTable(lnk){
 		body.appendChild(resp);
 	}
 }
-
