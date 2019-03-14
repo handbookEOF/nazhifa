@@ -123,6 +123,8 @@ figcaption a:hover {
 #headAccountBar {
   background-color: #362F24; }
 
+/*#headAccounts {
+}*/
 #headNav {
   font-size: 1.3em !important;
   font-weight: 900; }
@@ -133,6 +135,18 @@ figcaption a:hover {
 #nazhifasBlog, #nazhifasPost {
   padding-top: 40px;
   padding-bottom: 68px; }
+
+.nazhifaSearchResult a {
+  color: #362F24 !important;
+  text-decoration: none; }
+
+.nazhifaSearchResult a:hover {
+  color: #a9997d !important; }
+
+.form-control:focus {
+  color: #362f24;
+  border-color: #a9997d;
+  box-shadow: 0 0 0 0.2rem rgba(55, 48, 36, 0.25); }
 
 .a_demo_four {
   background-color: #d0c49f;
