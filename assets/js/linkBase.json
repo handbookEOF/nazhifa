@@ -9,7 +9,9 @@
 			{ "siteName":"ClearQuran", "siteLink":"https://www.clearquran.com", "siteOwner":"Talal Itani", "siteDesc":""},
 			{ "siteName":"The Islamic Bulletin", "siteLink":"http://www.islamicbulletin.org", "siteOwner":"", "siteDesc":""},
 			{ "siteName":"Abdurrahman", "siteLink":"https://abdurrahman.org/", "siteOwner":"", "siteDesc":""},
-			{ "siteName":"Islamic Scholar Imran Nazar Hosein", "siteLink":"http://www.imranhosein.org", "siteOwner":"Shaykh Imran Nazar Hosein", "siteDesc":""}
+			{ "siteName":"Islamic Scholar Imran Nazar Hosein", "siteLink":"http://www.imranhosein.org", "siteOwner":"Shaykh Imran Nazar Hosein", "siteDesc":""},
+			{ "siteName":"Learn Arabic with Laura", "siteLink":"https://learnarabicwithlaura.com/", "siteOwner":"Laura Al-Albani", "siteDesc":""},
+			{ "siteName":"Harun Yahya", "siteLink":"https://id.harunyahya.com/", "siteOwner":"Global Publication Ltd. Co.", "siteDesc":""}
 		]
 	},
 	{
@@ -26,9 +28,10 @@
 			{"siteName":"Project Euler", "siteLink":"https://projecteuler.net", "siteOwner":"" , "siteDesc":""},
 			{"siteName":"Sekolah Koding", "siteLink":"https://sekolahkoding.com", "siteOwner":"Sekolah Koding", "siteDesc":""},
 			{"siteName":"HackDesign", "siteLink":"https://hackdesign.org/", "siteOwner":"", "siteDesc":""},
-			{"siteName":"Feynman Lectures", "siteLink":"https://www.feynmanlectures.caltech.edu", "siteOwner":"California Institute of Technology", "siteDesc":""},
+			{"siteName":"Feynman Lectures", "siteLink":"http://www.feynmanlectures.caltech.edu", "siteOwner":"California Institute of Technology", "siteDesc":""},
 			{"siteName":"Wolfram MathWorld", "siteLink":"http://mathworld.wolfram.com/", "siteOwner":"Eric Weisstein", "siteDesc":""},
-			{"siteName":"Veronica Karlsson", "siteLink":"https://www.ludd.ltu.se/~vk/", "siteOwner":"Veronica Karlsson", "siteDesc":""}
+			{"siteName":"Veronica Karlsson", "siteLink":"https://www.ludd.ltu.se/~vk/", "siteOwner":"Veronica Karlsson", "siteDesc":""},
+			{"siteName":"INFJ.com", "siteLink":"http://www.infj.com/", "siteOwner":"Vicky Jo Vamer", "siteDesc":""}
 		]
 	},
 	{
