@@ -263,7 +263,7 @@ figcaption a:hover {
 
 .a_demo_four::before {
   background-color: #897c66;
-  background-image: url(/assets/images/down_arrow.png);
+  background-image: url(/nazhifa/assets/images/down_arrow.png);
   background-repeat: no-repeat;
   background-position: center center;
   content: "";
