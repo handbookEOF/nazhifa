@@ -1,4 +1,20 @@
 /* ### NAZHIFA DESIGN VERSION 3.0 ### */
+/* Fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Cinzel|Libre+Baskerville");
+/*
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Cinzel', serif;
+    font-family: 'Averia Serif Libre', cursive;
+*/
+.nav-link, .codrops-demos a {
+  font-family: "Averia Serif Libre", cursive !important; }
+
+* {
+  font-family: 'Libre Baskerville', serif; }
+
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-family: "Cinzel", serif !important; }
+
 @media (max-width: 575.98px) {
   #islam-figcaption {
     visibility: hidden; } }
@@ -54,7 +70,7 @@ a > .fab {
 
 #footerNav {
   font-size: 1em;
-  font-weight: bold; }
+  font-weight: 500; }
 
 #Separator {
   margin-top: 8em;
@@ -103,11 +119,11 @@ p {
   padding: 0; }
 
 .dropdown-menu {
-  background-color: #a9997d; }
+  background-color: #f8f9fa; }
 
 .dropdown-item {
-  color: #e8e5d4;
-  font-weight: bold; }
+  color: #212529;
+  /* font-weight: bold; */ }
 
 .market-icon {
   max-height: 50px; }
@@ -176,7 +192,7 @@ figcaption a:hover {
 }*/
 #headNav {
   font-size: 1.3em !important;
-  font-weight: 900; }
+  font-weight: 500; }
 
 #Headed img {
   max-height: 5em; }
@@ -247,7 +263,7 @@ figcaption a:hover {
 
 .a_demo_four::before {
   background-color: #897c66;
-  background-image: url(/nazhifa/assets/images/down_arrow.png);
+  background-image: url(/assets/images/down_arrow.png);
   background-repeat: no-repeat;
   background-position: center center;
   content: "";
@@ -306,7 +322,7 @@ figcaption a:hover {
   padding: 0px 4px;
   color: rgba(255, 255, 255, 0.8) !important;
   line-height: 20px;
-  font-style: italic;
+  /* font-style: italic; */
   font-size: 14px;
   border-radius: 3px;
   background: rgba(63, 63, 63, 0.65);
