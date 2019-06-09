@@ -30,6 +30,7 @@
 			{"siteName":"HackDesign", "siteLink":"https://hackdesign.org/", "siteOwner":"", "siteDesc":""},
 			{"siteName":"Feynman Lectures", "siteLink":"http://www.feynmanlectures.caltech.edu", "siteOwner":"California Institute of Technology", "siteDesc":""},
 			{"siteName":"Wolfram MathWorld", "siteLink":"http://mathworld.wolfram.com/", "siteOwner":"Eric Weisstein", "siteDesc":""},
+			{"siteName":"The Odin Project", "siteLink":"https://www.theodinproject.com/", "siteOwner":"Thinkful, Inc.", "siteDesc":""},
 			{"siteName":"Veronica Karlsson", "siteLink":"https://www.ludd.ltu.se/~vk/", "siteOwner":"Veronica Karlsson", "siteDesc":""},
 			{"siteName":"INFJ.com", "siteLink":"http://www.infj.com/", "siteOwner":"Vicky Jo Vamer", "siteDesc":""}
 		]
