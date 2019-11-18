@@ -358,8 +358,8 @@
 		
 		<div id="popular" class="container">
 			<div class="row">
-				<div class="col-1"></div>
-				<div class="col-10">
+				<div class="col-md-1"></div>
+				<div class="col-12 col-md-10">
 					<div class="card-columns">
 					  <div class="card text-center">
 						<img src="c2 amalan penghapus dosa.jpg" class="card-img-top" alt="...">
@@ -434,8 +434,8 @@
 		
 		<div class="container">
 			<div class="row">
-				<div class="col-1"></div>
-				<div class="col-10" id="display-container">
+				<div class="col-md-1"></div>
+				<div class="col-12 col-md-10" id="display-container">
 					<!--
 					*
 					*
@@ -640,7 +640,7 @@
      *
      *
      *
-     SIGNED FIX 09:23 14-11-2019
+     SIGNED FIX 08:45 18-11-2019
      please delete if you want to edit
      *
      *
@@ -649,11 +649,11 @@
      <footer class="shadow bg-white">
 		 <div class="container">
 			 <div class="row">
-				 <div class="col-4">
+				 <div class="col-12 col-md-4">
 					<h6>Apa itu Nazhifa?</h6>
 Nazhifa adalah sebuah toko online yang menjual berbagai buku islami, busana muslim dan juga herbal. Nazhifa berdiri pada bulan Desember tahun 2018. Nazhifa diambil dari bahasa Arab yang bermakna “bersih”. Kami berharap Nazhifa bisa menjadi langkah pertama kami dalam memulai dan beristiqomah dalam hidup bersih sesuai prinsip Islami. Nazhifa didirikan dengan tujuan untuk membantu mereka yang ingin memulai hidup bersih yang sesuai dengan tuntunan Al-Quran dan As-Sunnah dengan menyediakan berbagai keperluan Islami.
 				 </div>
-				 <div class="col-4">
+				 <div class="col-12 col-md-4">
 					<h6>Apa saja produk Nazhifa?</h6>
 					Produk Nazhifa memiliki kategori sebagai berikut:
 					<ul>
@@ -662,11 +662,11 @@ Nazhifa adalah sebuah toko online yang menjual berbagai buku islami, busana musl
 						<li>Produk herbal: kami menjual berbagai produk herbal seperti madu, siwak, minyak zaitun dan lain-lain.</li>
 					</ul>
 				 </div>
-				 <div class="col-4">
+				 <div class="col-12 col-md-4">
 					<h6>Bagaimana prinsip muammalah Nazhifa?</h6>
 Untuk saat ini toko kami masih bersifat online. Kami melayani pembelian langsung dan COD di daerah Jakarta Timur. Kami juga melayani pembelian online melalui berbagai platform atau marketplace seperti WA, Instagram, Tokopedia, dan Bukalapak.
 				 </div>
-				 <div class="col-4">
+				 <div class="col-12 col-md-4">
 					<h6>Kelebihan produk Nazhifa</h6>
 					<ul>
 						<li>Halal: Kami hanya menjual produk-produk yang berstatus halal yang sesuai dengan tuntunan Al-Quran dan As-Sunnah.</li>
@@ -676,7 +676,7 @@ Untuk saat ini toko kami masih bersifat online. Kami melayani pembelian langsung
 						<li>Variatif: Terdapat berbagai pilihan produk yang dapat Anda pilih. Anda dapat melihat katalog produk di website, berbagai marketplace dan akun instagram kami.</li>
 					</ul>
 				 </div>
-				 <div class="col-4">
+				 <div class="col-12 col-md-4">
 					<h6>Keunggulan belanja di Nazhifa</h6>
 					<ul>
 						<li>Amanah: Insya Allah, kami amanah. Kami selalu berusaha untuk menjalankan muammalah dengan sejujur mungkin sesuai dengan kaidah islami. </li>
@@ -687,7 +687,7 @@ Untuk saat ini toko kami masih bersifat online. Kami melayani pembelian langsung
 						<li>Terdapat sistem refund: Kami memiliki sistem refund bagi pembeli yang menerima produk dalam keadaan rusak.</li>
 					</ul>
 				 </div>
-				 <div class="col-4 text-center">
+				 <div class="col-12 col-md-4 text-center">
 					 <a href="#"><img class="my-3" style="max-width:150px" src="v4-tokopedia.png"/></a>
 					 <div class="w-100"></div>
 					 <a href="#"><img class="my-3" style="max-width:150px" src="v4-bukalapak.png"/></a>
@@ -733,19 +733,48 @@ Untuk saat ini toko kami masih bersifat online. Kami melayani pembelian langsung
     
     <script>
 	// When the user scrolls down 50px from the top of the document, resize the header's font size
-	window.onscroll = function() {scrollFunction()};
+	window.onscroll = function() {
+		var colXs = {
+		maxOfWidth:window.matchMedia("(max-width: 400px)"),
+		height:"0.5rem",
+		marginTop: "10px",
+		marginBottom: "0px",
+		heightTo:"1.5rem",
+		marginTopTo: "2rem",
+		marginBottomTo: "2rem"
+		};
+		var colMd = {
+			maxOfWidth:window.matchMedia("(max-width: 768px)"),
+			height:"0.8rem",
+			marginTop: "10px",
+			marginBottom: "0px",
+			heightTo:"4rem",
+			marginTopTo: "6rem",
+			marginBottomTo: "6rem"
+		};
+		if (colXs["maxOfWidth"].matches){
+			var m = colXs;
+			scrollFunction(m);
+		} else {
+			var m = colMd;
+			scrollFunction(m);
+		}
+		
+	};
 
-	function scrollFunction() {
+	function scrollFunction(m) {
 	  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-		document.getElementById("nazhifaHeader").style.height = "0.8em";
-		document.getElementById("nazhifaHeader").style.marginTop = "10px";
-		document.getElementById("nazhifaHeader").style.marginBottom = "0px";
+		document.getElementById("nazhifaHeader").style.height = m.height;
+		document.getElementById("nazhifaHeader").style.marginTop = m.marginTop;
+		document.getElementById("nazhifaHeader").style.marginBottom = m.marginBottom;
 	  } else {
-		document.getElementById("nazhifaHeader").style.height = "3em";
-		document.getElementById("nazhifaHeader").style.marginTop = "5em";
-		document.getElementById("nazhifaHeader").style.marginBottom = "5em";
+		document.getElementById("nazhifaHeader").style.height = m.heightTo;
+		document.getElementById("nazhifaHeader").style.marginTop = m.marginTopTo;
+		document.getElementById("nazhifaHeader").style.marginBottom = m.marginBottomTo;
 	  }
 	}
+	
+	
 	</script>
   </body>
 </html>
