@@ -22,6 +22,68 @@
     *
     -->
     <style>
+		/*
+		*
+		*
+		*
+		MOBILE FIRST
+		*
+		*
+		*
+		*/
+		/* Extra small devices (portrait phones, less than 576px) */
+		@media (max-width: 575.98px) {
+			#nazhifaHeader {
+				height: 1.5rem;
+				margin-top: 2rem;
+				margin-bottom: 2rem;
+				transition: 0.3s;
+			}
+		}
+
+		/* Small devices (landscape phones, 576px and up) */
+		@media (min-width: 576px) and (max-width: 767.98px) {
+			#nazhifaHeader {
+				height: 1.5rem;
+				margin-top: 2rem;
+				margin-bottom: 2rem;
+				transition: 0.3s;
+				background-color: lightblue;
+			}
+		}
+
+		/* Medium devices (tablets, 768px and up) */
+		@media (min-width: 768px) and (max-width: 991.98px) {
+			#nazhifaHeader {
+				height: 4rem;
+				margin-top: 6rem;
+				margin-bottom: 6rem;
+				transition: 0.3s;
+				background-color: lightgreen;
+			}
+		}
+
+		/* Large devices (desktops, 992px and up) */
+		@media (min-width: 992px) and (max-width: 1199.98px) {
+			#nazhifaHeader {
+				height: 4rem;
+				margin-top: 6rem;
+				margin-bottom: 6rem;
+				transition: 0.3s;
+				background-color: pink;
+			}
+		}
+
+		/* Extra large devices (large desktops, 1200px and up) */
+		@media (min-width: 1200px) {
+			#nazhifaHeader {
+				height: 4rem;
+				margin-top: 6rem;
+				margin-bottom: 6rem;
+				transition: 0.3s;
+			}
+		}
+		
 		@font-face {
 		  font-family: Laksaman;
 		  src: url(Laksaman.ttf);
@@ -147,13 +209,6 @@
 			margin-bottom: 1rem;
 		}
 		
-		#nazhifaHeader {
-			height: 3em;
-			margin-top: 5em;
-			margin-bottom: 5em;
-			transition: 0.3s;
-		}
-		
 		.bd-highlight {
 			background-color: rgba(86,61,124,.15);
 			border: 1px solid rgba(86,61,124,.15);
@@ -198,7 +253,12 @@
 		*
 		*
 		*/
-		
+		/* #nazhifaHeader {
+			height: 3em;
+			margin-top: 5em;
+			margin-bottom: 5em;
+			transition: 0.3s;
+		} */
 		
 		#pricetag {
 			background: linear-gradient(to right, #ecf5fd 50%, white 50%);
@@ -274,6 +334,8 @@
 		  background-position:-939px center
 		 }
 		}
+		
+		
     </style>
     
 
@@ -735,17 +797,44 @@ Untuk saat ini toko kami masih bersifat online. Kami melayani pembelian langsung
 	// When the user scrolls down 50px from the top of the document, resize the header's font size
 	window.onscroll = function() {
 		var colXs = {
-		maxOfWidth:window.matchMedia("(max-width: 400px)"),
-		height:"0.5rem",
-		marginTop: "10px",
-		marginBottom: "0px",
-		heightTo:"1.5rem",
-		marginTopTo: "2rem",
-		marginBottomTo: "2rem"
+			maxOfWidth:window.matchMedia("(max-width: 575px)"),
+			height:"0.5rem",
+			marginTop: "10px",
+			marginBottom: "0px",
+			heightTo:"1.5rem",
+			marginTopTo: "2rem",
+			marginBottomTo: "2rem"
+		};
+		var colSm = {
+			maxOfWidth:window.matchMedia("(max-width: 768px)"),
+			height:"0.5rem",
+			marginTop: "10px",
+			marginBottom: "0px",
+			heightTo:"1.5rem",
+			marginTopTo: "2rem",
+			marginBottomTo: "2rem"
 		};
 		var colMd = {
-			maxOfWidth:window.matchMedia("(max-width: 768px)"),
+			maxOfWidth:window.matchMedia("(max-width: 991px)"),
 			height:"0.8rem",
+			marginTop: "10px",
+			marginBottom: "0px",
+			heightTo:"4rem",
+			marginTopTo: "6rem",
+			marginBottomTo: "6rem"
+		};
+		var colLg = {
+			maxOfWidth:window.matchMedia("(max-width: 1199px)"),
+			height:"1rem",
+			marginTop: "10px",
+			marginBottom: "0px",
+			heightTo:"4rem",
+			marginTopTo: "6rem",
+			marginBottomTo: "6rem"
+		};
+		var colXl = {
+			maxOfWidth:window.matchMedia("(min-width: 1200px)"),
+			height:"1rem",
 			marginTop: "10px",
 			marginBottom: "0px",
 			heightTo:"4rem",
@@ -755,8 +844,17 @@ Untuk saat ini toko kami masih bersifat online. Kami melayani pembelian langsung
 		if (colXs["maxOfWidth"].matches){
 			var m = colXs;
 			scrollFunction(m);
-		} else {
+		} else if (colSm["maxOfWidth"].matches){
+			var m = colSm;
+			scrollFunction(m);
+		} else if (colMd["maxOfWidth"].matches){
 			var m = colMd;
+			scrollFunction(m);
+		} else if (colLg["maxOfWidth"].matches){
+			var m = colLg;
+			scrollFunction(m);
+		} else {
+			var m = colXl;
 			scrollFunction(m);
 		}
 		
