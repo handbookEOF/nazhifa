@@ -18,7 +18,7 @@
 
     <script src="https://unpkg.com/lunr/lunr.js"></script>
     
-    <title>Tentang - Siapa kami?</title>
+    <title></title>
   </head>
   
   <body>
@@ -95,8 +95,8 @@ NAVIGATION
                                         
                                         
                                         
-                                            <li class="nav-item active">
-                                                <a id="" class="nav-link" href="/about.html">About<span class="sr-only">(current)</span></a>
+                                            <li class="nav-item">
+                                                <a id="" class="nav-link" href="/about.html">About</a>
                                             </li>
                                         
                                         
@@ -121,17 +121,25 @@ NAVIGATION
       
       
     <main>
-            <div class="container">
-<div class="row">
-<div class="col-sm-1"></div>
-<div class="col-12 col-sm-10 px-sm-5">
-<!-- img src="/assets/images/egg-of-dino.png" class="rounded mb-5 mx-auto d-block" width="150px" alt="..."/-->
-<p>Nazhifa adalah situs yang menyediakan berbagai informasi terkait referensi dan resource mengenal berbagai bidang keilmuan secara gratis. Misi utama kami adalah menyebarkan budaya berbagi dan mencerdaskan sesama. Berbagai tautan yang tersedia di situs ini kami himpun berdasarkan hasil temuan pribadi dan juga rekomendasi dari rekan-rekan Nazhifa yang murah hati untuk berbagi.
-Pembaca sekalian diperkenankan membagi dan menyebarluaskan sebagian atau seluruh tautan Nazhifa kepada publik. Selain itu, Nazhifa juga membuka pintu yang seluas-luasnya bagi pembaca yang ingin berkontribusi.
-Akhir kata, selamat membaca, semangat cerdas bersama!</p>
-</div>
-</div>
-</div>
+            <div class="home"><h2 class="post-list-heading">Posts</h2>
+    <ul class="post-list"><li><span class="post-meta">Nov 5, 2018</span>
+        <h3>
+          <a class="post-link" href="/2018/11/05/halo-dunia.html">
+            Halo Dunia!
+          </a>
+        </h3></li><li><span class="post-meta">Nov 5, 2018</span>
+        <h3>
+          <a class="post-link" href="/2018/11/05/ada-apa-sih.html">
+            Ada apa sih!
+          </a>
+        </h3></li><li><span class="post-meta">Oct 21, 2018</span>
+        <h3>
+          <a class="post-link" href="/2018/10/21/welcome-to-jekyll.html">
+            Welcome to Jekyll!
+          </a>
+        </h3></li></ul>
+
+    <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p></div>
 
     </main>
 

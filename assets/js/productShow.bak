@@ -21,7 +21,7 @@ function init(jsonpath) {
 		// Parsing JSON string into object
 		var links = JSON.parse(response);
 		showProduct(links);
-		//showModal(links);
+		showModal(links);
 	}, jsonpath);
 }
 
@@ -33,177 +33,7 @@ var productClickHandler = function(arg) { // dibuat karena onclick tidak bisa bl
   //return function() { alert(arg); };
 }
 
-
 function showProduct(lnk){
-    /*
-    <div class="card-deck">
-								
-        <div class="card shadow-sm">
-            <img src="c2 amalan penghapus dosa.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Amalan Penghapus Dosa</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Aqwam</h6>
-            </div>
-            <div class="card-footer">
-                <a href="#" class="btn btn-tertiary rounded-pill font-weight-bold">100kg</a>
-                <a href="#" class="btn btn-success btn-price rounded-pill ml-3 font-weight-bold">Rp. 1.400.000</a>
-            </div>
-        </div>
-
-    </div>
-    */
-
-	var idp, body, crdd, crddclass, crddarr, card, cardclass, cardarr,
-		img, imgclass, imgarr, attsrc, crdb, crdbclass, crdbarr, title, titleclass,
-		titlearr, titlecnt, stitle, stitleclass, stitlearr, stitlecnt,
-		crdf, crdfclass, crdfarr, awt, awtclass, awtarr, awtcnt, awtformat,
-		price, priceclass, pricearr, pricecnt, priceformat;
-
-	for (i in lnk) {
-
-		idp = lnk[i].id;
-		body = document.getElementById(idp);
-
-		for (j in lnk[i].inventory){
-
-			var k = j % 3;
-			if (k == 0){
-				// <div class="card-deck">
-				crdd = document.createElement('div');
-				crddclass = "card-deck";
-				crddarr = crdd.className.split(" ");
-				if (crddarr.indexOf(crddclass) == -1) {
-					crdd.className += " " + crddclass;
-				}
-			}
-			
-
-			// <div class="card shadow-sm">
-			card = document.createElement('div');
-			cardclass = "card shadow-sm hover-shadow";
-			cardarr = card.className.split(" ");
-			if (cardarr.indexOf(cardclass) == -1) {
-				card.className += " " + cardclass;
-			}
-
-			// <img src="c2 amalan penghapus dosa.jpg" class="card-img-top" alt="...">
-			img = document.createElement('img');
-			// img.style.width = '100%';
-			imgclass = "card-img-top";
-			imgarr = img.className.split(" ");
-			if (imgarr.indexOf(imgclass) == -1) {
-				img.className += " " + imgclass;
-			}
-			var attsrc = document.createAttribute('src');
-			// attsrc.value = {% if jekyll.environment == 'production' %}'/nazhifa' + {% endif %} lnk[i].inventory[j].img;
-			attsrc.value = lnk[i].inventory[j].img;
-			img.setAttributeNode(attsrc);
-			card.appendChild(img);
-
-			// <div class="card-body">
-			crdb = document.createElement('div');
-			crdbclass = "card-body";
-			crdbarr = crdb.className.split(" ");
-			if (crdbarr.indexOf(crdbclass) == -1) {
-				crdb.className += " " + crdbclass;
-			}
-
-			// <h5 class="card-title">Amalan Penghapus Dosa</h5>
-			title = document.createElement('h5');
-			titleclass = "card-title";
-			titlearr = title.className.split(" ");
-			if (titlearr.indexOf(titleclass) == -1) {
-				title.className += " " + titleclass;
-			}
-			// title.onclick = productClickHandler(parseInt(j));
-			titlecnt = document.createTextNode(lnk[i].inventory[j].title);
-			title.appendChild(titlecnt);
-			// append title to card-body
-			crdb.appendChild(title);
-
-			// <h6 class="card-subtitle mb-2 text-muted">Aqwam</h6>
-			stitle = document.createElement('h6');
-			stitleclass = "card-subtitle mb-2 text-muted";
-			stitlearr = stitle.className.split(" ");
-			if (stitlearr.indexOf(stitleclass) == -1) {
-				stitle.className += " " + stitleclass;
-			}
-			// stitle.onclick = productClickHandler(parseInt(j));
-			stitlecnt = document.createTextNode(lnk[i].inventory[j].company);
-			stitle.appendChild(stitlecnt);
-			// append stitle to card-body
-			crdb.appendChild(stitle);
-
-			// append card-body to card
-			card.appendChild(crdb);
-
-			// <div class="card-footer">
-			crdf = document.createElement('div');
-			crdfclass = "card-footer";
-			crdfarr = crdf.className.split(" ");
-			if (crdfarr.indexOf(crdfclass) == -1) {
-				crdf.className += " " + crdfclass;
-			}
-
-			// <a href="#" class="btn btn-tertiary rounded-pill font-weight-bold">100kg</a>
-			awt = document.createElement('a');
-			awtclass = "btn btn-tertiary rounded-pill font-weight-bold";
-			awtarr = awt.className.split(" ");
-			if (awtarr.indexOf(awtclass) == -1) {
-				awt.className += " " + awtclass;
-			}
-			var awtformat = lnk[i].inventory[j].weight + "gr";
-			awtcnt = document.createTextNode(awtformat);
-			awt.appendChild(awtcnt);
-			// append awt to card-footer
-			crdf.appendChild(awt);
-
-			// <a href="#" class="btn btn-success btn-price rounded-pill ml-3 font-weight-bold">Rp. 1.400.000</a>
-			price = document.createElement('a');
-			priceclass = "btn btn-success btn-price rounded-pill ml-3 font-weight-bold";
-			pricearr = price.className.split(" ");
-			if (pricearr.indexOf(priceclass) == -1) {
-				price.className += " " + priceclass;
-			}
-			var priceformat = "Rp." + lnk[i].inventory[j].price;
-			pricecnt = document.createTextNode(priceformat);
-			price.appendChild(pricecnt);
-			// append price to card-footer
-			crdf.appendChild(price);
-
-			// append card-footer to card
-			card.appendChild(crdf);
-
-			// appending
-			crdd.appendChild(card);
-			body.appendChild(crdd);
-		}
-
-		
-		
-	}
-}
-
-
-/*
-function showProduct(lnk){
-    *
-    <div class="card-deck">
-								
-        <div class="card shadow-sm">
-            <img src="c2 amalan penghapus dosa.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Amalan Penghapus Dosa</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Aqwam</h6>
-            </div>
-            <div class="card-footer">
-                <a href="#" class="btn btn-tertiary rounded-pill font-weight-bold">100kg</a>
-                <a href="#" class="btn btn-success btn-price rounded-pill ml-3 font-weight-bold">Rp. 1.400.000</a>
-            </div>
-        </div>
-
-    </div>
-    *
 	var idp, body, prow, prowclass, prowarr, col, colclass, colarr, 
 		card, cardclass, cardarr, img, cardc, cardcclass, cardcarr, 
 		title, titleclass, titlearr, titlec, price, priceclass, 
@@ -236,8 +66,7 @@ function showProduct(lnk){
 			img = document.createElement('img');
 			img.style.width = '100%';
 			var attsrc = document.createAttribute('src');
-			// attsrc.value = {% if jekyll.environment == 'production' %}'/nazhifa' + {% endif %} lnk[i].inventory[j].img;
-			attsrc.value = lnk[i].inventory[j].img;
+			attsrc.value =  lnk[i].inventory[j].img;
 			img.setAttributeNode(attsrc);
 			card.appendChild(img);
 			// buat div class card container
@@ -273,10 +102,10 @@ function showProduct(lnk){
 			price.appendChild(pricec);
 			cardc.appendChild(price);
 			// buat paragraf deskripsi
-			* desc = document.createElement('p');
+			/* desc = document.createElement('p');
 			descc = document.createTextNode(lnk[i].inventory[j].isbn);
 			desc.appendChild(descc);
-			cardc.appendChild(desc); *
+			cardc.appendChild(desc); */
 			// buat paragraf lainnya
 			// buat paragraf add cart button
 			desc = document.createElement('p');
@@ -299,10 +128,8 @@ function showProduct(lnk){
 		body.appendChild(prow);
 	}
 }
-*/
 
-
-/* function showModal(lks)
+function showModal(lks)
 {
 	var idm, mbody, mcontent, mclass, marr, mslides, mslidesc, mslidesr,
 		ntext, ntclass, ntarr, ntextfomat, ntextc, mimg, mimgc, mimgr,
@@ -350,7 +177,7 @@ function showProduct(lnk){
 			}
 			mimg.style.width = '100%';
 			var mattsrc = document.createAttribute('src');
-			mattsrc.value = {% if jekyll.environment == 'production' %}'/nazhifa' + {% endif %} lks[i].inventory[j].img;
+			mattsrc.value =  lks[i].inventory[j].img;
 			mimg.setAttributeNode(mattsrc);
 			mslides.appendChild(mimg);
 			mcontent.appendChild(mslides);
@@ -392,4 +219,3 @@ function showProduct(lnk){
 		mbody.appendChild(mcontent);
 	}
 }
-*/

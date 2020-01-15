@@ -18,7 +18,7 @@
 
     <script src="https://unpkg.com/lunr/lunr.js"></script>
     
-    <title>Tentang - Siapa kami?</title>
+    <title>Beranda - Selamat Datang di Nazhifa!</title>
   </head>
   
   <body>
@@ -95,8 +95,8 @@ NAVIGATION
                                         
                                         
                                         
-                                            <li class="nav-item active">
-                                                <a id="" class="nav-link" href="/about.html">About<span class="sr-only">(current)</span></a>
+                                            <li class="nav-item">
+                                                <a id="" class="nav-link" href="/about.html">About</a>
                                             </li>
                                         
                                         
@@ -125,10 +125,15 @@ NAVIGATION
 <div class="row">
 <div class="col-sm-1"></div>
 <div class="col-12 col-sm-10 px-sm-5">
-<!-- img src="/assets/images/egg-of-dino.png" class="rounded mb-5 mx-auto d-block" width="150px" alt="..."/-->
-<p>Nazhifa adalah situs yang menyediakan berbagai informasi terkait referensi dan resource mengenal berbagai bidang keilmuan secara gratis. Misi utama kami adalah menyebarkan budaya berbagi dan mencerdaskan sesama. Berbagai tautan yang tersedia di situs ini kami himpun berdasarkan hasil temuan pribadi dan juga rekomendasi dari rekan-rekan Nazhifa yang murah hati untuk berbagi.
-Pembaca sekalian diperkenankan membagi dan menyebarluaskan sebagian atau seluruh tautan Nazhifa kepada publik. Selain itu, Nazhifa juga membuka pintu yang seluas-luasnya bagi pembaca yang ingin berkontribusi.
-Akhir kata, selamat membaca, semangat cerdas bersama!</p>
+<h1>Selamat Datang di Nazhifa!</h1>
+<p>Nazhifa menyediakan berbagai tautan referensi terkait berbagai disiplin <!--a href="#" data-toggle="tooltip" data-placement="top" title="kenapa kalo gambar gak bisa?">Hover over me</a--> ilmu. Yuk, cari informasi yang kamu butuhkan lalu akses sepuasmu. Jelajahi sumbernya, pelajari ilmunya, bagikan manfaatnya!</p>
+
+ <!-- p><a class="a_demo_one" href="#">Click me!</a></p>
+ <p><a class="a_demo_four" href="#">Categories</a></p -->
+ 
+
+
+
 </div>
 </div>
 </div>
