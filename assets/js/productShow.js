@@ -95,8 +95,8 @@ function showProduct(lnk){
 				img.className += " " + imgclass;
 			}
 			var attsrc = document.createAttribute('src');
-			// attsrc.value = {% if jekyll.environment == 'production' %}'/nazhifa' + {% endif %} lnk[i].inventory[j].img;
-			attsrc.value = lnk[i].inventory[j].img;
+			attsrc.value = '/nazhifa' +  lnk[i].inventory[j].img;
+			// attsrc.value = lnk[i].inventory[j].img;
 			img.setAttributeNode(attsrc);
 			card.appendChild(img);
 
@@ -236,7 +236,7 @@ function showProduct(lnk){
 			img = document.createElement('img');
 			img.style.width = '100%';
 			var attsrc = document.createAttribute('src');
-			// attsrc.value = {% if jekyll.environment == 'production' %}'/nazhifa' + {% endif %} lnk[i].inventory[j].img;
+			// attsrc.value = '/nazhifa' +  lnk[i].inventory[j].img;
 			attsrc.value = lnk[i].inventory[j].img;
 			img.setAttributeNode(attsrc);
 			card.appendChild(img);
@@ -350,7 +350,7 @@ function showProduct(lnk){
 			}
 			mimg.style.width = '100%';
 			var mattsrc = document.createAttribute('src');
-			mattsrc.value = {% if jekyll.environment == 'production' %}'/nazhifa' + {% endif %} lks[i].inventory[j].img;
+			mattsrc.value = '/nazhifa' +  lks[i].inventory[j].img;
 			mimg.setAttributeNode(mattsrc);
 			mslides.appendChild(mimg);
 			mcontent.appendChild(mslides);

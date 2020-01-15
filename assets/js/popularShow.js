@@ -118,8 +118,8 @@ function showPopular(lnk){
 				imgPop.className += " " + imgPopclass;
 			}
 			var imgPopsrc = document.createAttribute('src');
-			// imgPopsrc.value = {% if jekyll.environment == 'production' %}'/nazhifa' + {% endif %} lnk[i].inventory[j].img;
-			imgPopsrc.value = lnk[i].inventory[j].img;
+			imgPopsrc.value = '/nazhifa' +  lnk[i].inventory[j].img;
+			//imgPopsrc.value = lnk[i].inventory[j].img;
 			imgPop.setAttributeNode(imgPopsrc);
 			cPop.appendChild(imgPop);
 			
@@ -186,7 +186,7 @@ function showPopular(lnk){
 					img.className += " " + imgclass;
 				}
 				var attsrc = document.createAttribute('src');
-				// attsrc.value = {% if jekyll.environment == 'production' %}'/nazhifa' + {% endif %} lnk[i].inventory[j].img;
+				// attsrc.value = '/nazhifa' +  lnk[i].inventory[j].img;
 				attsrc.value = lnk[i].inventory[j].img;
 				img.setAttributeNode(attsrc);
 				card.appendChild(img);
