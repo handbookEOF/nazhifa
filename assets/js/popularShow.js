@@ -43,7 +43,7 @@ function showPopular(lnk){
     </div>
     */
 
-	var idPop, bodyPop, cPop, cPopclass, cPoparr, 
+	var idRaw, idPop, bodyPop, cPop, cPopclass, cPoparr, 
 		ctlPop, ctlPopclass, ctlPoparr, ctlconPop,
 		cstlPop, cstlPopclass, cstlPoparr, cstlconPop,
 		cbdPop, cbdPopclass, cbdPoparr, cBq, cBqclass, cBqarr,
@@ -54,7 +54,9 @@ function showPopular(lnk){
 
 	for (i in lnk) {
 
-		idPop = lnk[i].id;
+		idRaw = lnk[i].id;
+		idPop = idRaw.charAt(0).toUpperCase() + idRaw.slice(1);
+		// di uppercase supaya sync dengan _data
     	bodyPop = document.getElementById(idPop);
 
         for (j in lnk[i].inventory){
@@ -63,6 +65,7 @@ function showPopular(lnk){
 			if ( j == 4 ){
 				cPop = document.createElement('div');
 				cPopclass = "card bg-transparent text-center p-3";
+				cPop.id = "cardMainQuote";
 				cPoparr = cPop.className.split(" ");
 				if (cPoparr.indexOf(cPopclass) == -1) {
 					cPop.className += " " + cPopclass;
@@ -150,7 +153,7 @@ function showPopular(lnk){
 			}
 			//cstlconPop = document.createTextNode(lnk[i].inventory[j].company);
 			cstlconPop = document.createTextNode("penerbit");
-			ctlPop.appendChild(cstlconPop);
+			cstlPop.appendChild(cstlconPop);
 			cbdPop.appendChild(cstlPop);
 
 			cPop.appendChild(cbdPop);

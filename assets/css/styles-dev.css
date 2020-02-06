@@ -41,7 +41,12 @@ MOBILE FIRST
 
 @font-face { font-family: LaksamanBoldItalic; src: url(/assets/fonts/Laksaman-BoldItalic.ttf); font-weight: normal; font-style: normal; }
 
-body { background-color: #eef1f2; padding-top: 300px; }
+/* body{ background-color: #eef1f2; padding-top: 300px; } */
+body { background-image: url("/assets/images/sky-blue-tile.png"); background-repeat: repeat; }
+
+.bg-soft-white { background-image: url("/assets/images/soft-white-tile.png"); background-repeat: repeat; }
+
+#cardMainQuote { border-color: transparent !important; }
 
 footer { font-size: 12px; }
 
@@ -138,7 +143,7 @@ SEASONING
 
 #quote { animation-name: bg_slide; animation-duration: 88s; animation-timing-function: linear; animation-delay: 0s; animation-iteration-count: infinite; animation-direction: normal; animation-fill-mode: none; animation-play-state: running; }
 
-#quote { padding: 150px 0 150px 0; background: url(/assets/images/cloud-tile-random-3.png) repeat-x; /* ukuran size ini kenapa harus 940 karena background position di @keyframes */ /* background-size: auto 120px; */ overflow: hidden; }
+#quote { padding: 450px 0 150px 0; background: url(/assets/images/cloud-tile-soothing-600.png) repeat-x; /* ukuran size ini kenapa harus 940 karena background position di @keyframes */ /* background-size: auto 120px; */ overflow: hidden; }
 
 @-webkit-keyframes bg_slide { from { background-position: 0 center; }
   to { background-position: -939px center; } }
