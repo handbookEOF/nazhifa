@@ -88,10 +88,16 @@ function showProduct(lnk){
 				}
 			}
 			
+			crdCol = document.createElement('div');
+			crdColclass = "col-12 col-sm-12 col-md-4";
+			crdColarr = crdCol.className.split(" ");
+			if (crdColarr.indexOf(crdColclass) == -1) {
+				crdCol.className += " " + crdColclass;
+			}
 
 			// <div class="card shadow-sm">
 			card = document.createElement('div');
-			cardclass = "card col-12 col-sm-12 col-md-4 shadow";
+			cardclass = "card shadow";
 			cardarr = card.className.split(" ");
 			if (cardarr.indexOf(cardclass) == -1) {
 				card.className += " " + cardclass;
@@ -184,9 +190,10 @@ function showProduct(lnk){
 
 			// append card-footer to card
 			card.appendChild(crdf);
+			crdCol.appendChild(card);
 
 			// appending
-			crdd.appendChild(card);
+			crdd.appendChild(crdCol);
 			body.appendChild(crdd);
 		}
 

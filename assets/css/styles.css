@@ -42,6 +42,8 @@ MOBILE FIRST
 @font-face { font-family: LaksamanBoldItalic; src: url(/nazhifa/assets/fonts/Laksaman-BoldItalic.ttf); font-weight: normal; font-style: normal; }
 
 /* body{ background-color: #eef1f2; padding-top: 300px; } */
+.card-deck, .card { display: inline-block !important; }
+
 body { background-image: url("/nazhifa/assets/images/sky-blue-tile.png"); background-repeat: repeat; color: #183644; }
 
 .bg-soft-white { background-image: url("/nazhifa/assets/images/soft-white-tile.png"); background-repeat: repeat; }
@@ -151,7 +153,7 @@ SEASONING
 
 #quote { animation-name: bg_slide; animation-duration: 88s; animation-timing-function: linear; animation-delay: 0s; animation-iteration-count: infinite; animation-direction: normal; animation-fill-mode: none; animation-play-state: running; }
 
-#quote { padding: 450px 0 150px 0; background: url(/assets/images/cloud-tile-soothing-600.png) repeat-x; /* ukuran size ini kenapa harus 940 karena background position di @keyframes */ /* background-size: auto 120px; */ overflow: hidden; }
+#quote { padding: 450px 0 150px 0; background: url(/nazhifa/assets/images/cloud-tile-soothing-600.png) repeat-x; /* ukuran size ini kenapa harus 940 karena background position di @keyframes */ /* background-size: auto 120px; */ overflow: hidden; }
 
 @-webkit-keyframes bg_slide { from { background-position: 0 center; }
   to { background-position: -939px center; } }
@@ -160,7 +162,7 @@ SEASONING
   to { background-position: -939px center; } }
 
 /* COBA DULU EDIT WIDTH NYA CARD */
-/*#catalogue { .card { display: inline-block!important; } }*/
+/*#catalogue .card { display: inline-block!important; }*/
 /*#catalogue { .card-deck { width: 100%!important; } }*/
 .card-deck .col-1, .card-deck .col-2, .card-deck .col-3, .card-deck .col-4, .card-deck .col-5, .card-deck .col-6, .card-deck .col-7, .card-deck .col-8, .card-deck .col-9, .card-deck .col-10, .card-deck .col-11, .card-deck .col-12, .card-deck .col-sm-1, .card-deck .col-sm-2, .card-deck .col-sm-3, .card-deck .col-sm-4, .card-deck .col-sm-5, .card-deck .col-sm-6, .card-deck .col-sm-7, .card-deck .col-sm-8, .card-deck .col-sm-9, .card-deck .col-sm-10, .card-deck .col-sm-11, .card-deck .col-sm-12, .card-deck .col-md-1, .card-deck .col-md-2, .card-deck .col-md-3, .card-deck .col-md-4, .card-deck .col-md-5, .card-deck .col-md-6, .card-deck .col-md-7, .card-deck .col-md-8, .card-deck .col-md-9, .card-deck .col-md-10, .card-deck .col-md-11, .card-deck .col-md-12, .card-deck .col-lg-1, .card-deck .col-lg-2, .card-deck .col-lg-3, .card-deck .col-lg-4, .card-deck .col-lg-5, .card-deck .col-lg-6, .card-deck .col-lg-7, .card-deck .col-lg-8, .card-deck .col-lg-9, .card-deck .col-lg-10, .card-deck .col-lg-11, .card-deck .col-lg-12, .card-deck .col-xl-1, .card-deck .col-xl-2, .card-deck .col-xl-3, .card-deck .col-xl-4, .card-deck .col-xl-5, .card-deck .col-xl-6, .card-deck .col-xl-7, .card-deck .col-xl-8, .card-deck .col-xl-9, .card-deck .col-xl-10, .card-deck .col-xl-11, .card-deck .col-xl-12 { padding: 0 !important; }
 
