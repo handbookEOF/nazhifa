@@ -20,18 +20,18 @@ MOBILE FIRST
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { #nazhifaHeader { height: 4rem; margin-top: 6rem; margin-bottom: 6rem; transition: 0.3s; /* background-color: lightgreen; */ }
-  #display-container .card { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 25px !important; margin-left: 25px !important; }
-  #display-container .card-deck { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 25px !important; margin-left: 25px !important; } }
+  #display-container .card { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 5px !important; margin-left: 5px !important; }
+  #display-container .card-deck { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 5px !important; margin-left: 5px !important; } }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { #nazhifaHeader { height: 4rem; margin-top: 6rem; margin-bottom: 6rem; transition: 0.3s; /* background-color: pink; */ }
-  #display-container .card { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 25px !important; margin-left: 25px !important; }
-  #display-container .card-deck { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 25px !important; margin-left: 25px !important; } }
+  #display-container .card { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 5px !important; margin-left: 5px !important; }
+  #display-container .card-deck { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 5px !important; margin-left: 5px !important; } }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { #nazhifaHeader { height: 4rem; margin-top: 6rem; margin-bottom: 6rem; transition: 0.3s; }
-  #display-container .card { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 25px !important; margin-left: 25px !important; }
-  #display-container .card-deck { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 25px !important; margin-left: 25px !important; } }
+  #display-container .card { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 5px !important; margin-left: 5px !important; }
+  #display-container .card-deck { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 5px !important; margin-left: 5px !important; } }
 
 @font-face { font-family: Laksaman; src: url(/assets/fonts/Laksaman.ttf); font-weight: normal; font-style: normal; }
 
@@ -42,7 +42,7 @@ MOBILE FIRST
 @font-face { font-family: LaksamanBoldItalic; src: url(/assets/fonts/Laksaman-BoldItalic.ttf); font-weight: normal; font-style: normal; }
 
 /* body{ background-color: #eef1f2; padding-top: 300px; } */
-body { background-image: url("/assets/images/sky-blue-tile.png"); background-repeat: repeat; }
+body { background-image: url("/assets/images/sky-blue-tile.png"); background-repeat: repeat; color: #183644; }
 
 .bg-soft-white { background-image: url("/assets/images/soft-white-tile.png"); background-repeat: repeat; }
 
@@ -62,20 +62,28 @@ footer.shadow { box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
 
 main .btn { font-size: 12px; padding: 6px; }
 
-main .btn-tertiary { color: #28a745 !important; background-color: #ecf5fd; border-color: #ecf5fd; }
+main .btn-tertiary { color: #77bbdd !important; background-color: #fff; border-color: none; }
 
-main .btn-tertiary:hover { color: #1d7732 !important; background-color: #d6fade; border-color: #d6fade; }
+main .btn-tertiary:hover { color: #5baddc !important; background-color: #f7fdfd; border-color: none; }
 
-main .btn-success { color: #fff !important; }
+main .btn-primary { background-color: #77bbdd; border: none; color: #f1f9f9 !important; }
+
+main .btn-primary:hover { background-color: #5baddc; color: #fff !important; }
 
 main .btn { font-size: 14px; }
 
 /*
 .btn-secondary:hover{color:#fff;background-color:#5a6268;border-color:#545b62}.btn-secondary.focus,.btn-secondary:focus{box-shadow:0 0 0 .2rem rgba(130,138,145,.5)}.btn-secondary.disabled,.btn-secondary:disabled{color:#fff;background-color:#6c757d;border-color:#6c757d}.btn-secondary:not(:disabled):not(.disabled).active,.btn-secondary:not(:disabled):not(.disabled):active,.show>.btn-secondary.dropdown-toggle{color:#fff;background-color:#545b62;border-color:#4e555b}.btn-secondary:not(:disabled):not(.disabled).active:focus,.btn-secondary:not(:disabled):not(.disabled):active:focus,.show>.btn-secondary.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(130,138,145,.5)}
 */
-main .card { font-size: 14px; }
+main .card { font-size: 14px; border-radius: 15px; }
+
+main .card-img-top, main .card-deck .card-footer { border-radius: 15px; }
+
+main .card-deck .card-footer { border-top: none; background-color: rgba(40, 121, 160, 0.05); }
 
 main .card-deck { margin-top: 30px; margin-bottom: 30px; }
+
+.no-headbutt::before { /* So the anchor doesn't headbutt the nav */ display: block; content: " "; /* margin-top: -180px!important; */ height: 180px !important; visibility: hidden; pointer-events: none; }
 
 .mx-5 { margin-left: 5rem !important; margin-right: 5rem !important; }
 
@@ -150,5 +158,34 @@ SEASONING
 
 @keyframes bg_slide { from { background-position: 0 center; }
   to { background-position: -939px center; } }
+
+/* COBA DULU EDIT WIDTH NYA CARD */
+/*#catalogue { .card { display: inline-block!important; } }*/
+/*#catalogue { .card-deck { width: 100%!important; } }*/
+.card-deck .col-1, .card-deck .col-2, .card-deck .col-3, .card-deck .col-4, .card-deck .col-5, .card-deck .col-6, .card-deck .col-7, .card-deck .col-8, .card-deck .col-9, .card-deck .col-10, .card-deck .col-11, .card-deck .col-12, .card-deck .col-sm-1, .card-deck .col-sm-2, .card-deck .col-sm-3, .card-deck .col-sm-4, .card-deck .col-sm-5, .card-deck .col-sm-6, .card-deck .col-sm-7, .card-deck .col-sm-8, .card-deck .col-sm-9, .card-deck .col-sm-10, .card-deck .col-sm-11, .card-deck .col-sm-12, .card-deck .col-md-1, .card-deck .col-md-2, .card-deck .col-md-3, .card-deck .col-md-4, .card-deck .col-md-5, .card-deck .col-md-6, .card-deck .col-md-7, .card-deck .col-md-8, .card-deck .col-md-9, .card-deck .col-md-10, .card-deck .col-md-11, .card-deck .col-md-12, .card-deck .col-lg-1, .card-deck .col-lg-2, .card-deck .col-lg-3, .card-deck .col-lg-4, .card-deck .col-lg-5, .card-deck .col-lg-6, .card-deck .col-lg-7, .card-deck .col-lg-8, .card-deck .col-lg-9, .card-deck .col-lg-10, .card-deck .col-lg-11, .card-deck .col-lg-12, .card-deck .col-xl-1, .card-deck .col-xl-2, .card-deck .col-xl-3, .card-deck .col-xl-4, .card-deck .col-xl-5, .card-deck .col-xl-6, .card-deck .col-xl-7, .card-deck .col-xl-8, .card-deck .col-xl-9, .card-deck .col-xl-10, .card-deck .col-xl-11, .card-deck .col-xl-12 { padding: 0 !important; }
+
+.card-1 { -ms-flex: 0 0 8.333333% !important; flex: 0 0 8.333333% !important; max-width: 8.333333% !important; }
+
+.card-2 { -ms-flex: 0 0 16.666667% !important; flex: 0 0 16.666667% !important; max-width: 16.666667% !important; }
+
+.card-3 { -ms-flex: 0 0 25% !important; flex: 0 0 25% !important; max-width: 25% !important; }
+
+.card-4 { -ms-flex: 0 0 33.333333% !important; flex: 0 0 33.333333% !important; max-width: 33.333333% !important; }
+
+.card-5 { -ms-flex: 0 0 41.666667% !important; flex: 0 0 41.666667% !important; max-width: 41.666667% !important; }
+
+.card-6 { -ms-flex: 0 0 50% !important; flex: 0 0 50% !important; max-width: 50% !important; }
+
+.card-7 { -ms-flex: 0 0 58.333333% !important; flex: 0 0 58.333333% !important; max-width: 58.333333% !important; }
+
+.card-8 { -ms-flex: 0 0 66.666667% !important; flex: 0 0 66.666667% !important; max-width: 66.666667% !important; }
+
+.card-9 { -ms-flex: 0 0 75% !important; flex: 0 0 75% !important; max-width: 75% !important; }
+
+.card-10 { -ms-flex: 0 0 83.333333% !important; flex: 0 0 83.333333% !important; max-width: 83.333333% !important; }
+
+.card-11 { -ms-flex: 0 0 91.666667% !important; flex: 0 0 91.666667% !important; max-width: 91.666667% !important; }
+
+.card-12 { -ms-flex: 0 0 100% !important; flex: 0 0 100% !important; max-width: 100% !important; }
 
 /*# sourceMappingURL=styles-dev.css.map */

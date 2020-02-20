@@ -53,7 +53,7 @@ function showProduct(lnk){
     </div>
     */
 
-	var idp, body, crdd, crddclass, crddarr, card, cardclass, cardarr,
+	var idp, idh, body, crdd, crddclass, crddarr, card, cardclass, cardarr,
 		img, imgclass, imgarr, attsrc, crdb, crdbclass, crdbarr, title, titleclass,
 		titlearr, titlecnt, stitle, stitleclass, stitlearr, stitlecnt,
 		crdf, crdfclass, crdfarr, awt, awtclass, awtarr, awtcnt, awtformat,
@@ -62,7 +62,18 @@ function showProduct(lnk){
 	for (i in lnk) {
 
 		idp = lnk[i].id;
+		idh = idp.charAt(0).toUpperCase() + idp.slice(1);
 		body = document.getElementById(idp);
+
+		ctgyHeader = document.createElement('h2');
+		ctgyclass = "no-headbutt";
+		ctgyarr = ctgyHeader.className.split(" ");
+		if (ctgyarr.indexOf(ctgyclass) == -1) {
+			ctgyHeader.className += " " + ctgyclass;
+		}
+		ctgyHeaderTxt = document.createTextNode(idh);
+		ctgyHeader.appendChild(ctgyHeaderTxt);
+		body.appendChild(ctgyHeader);
 
 		for (j in lnk[i].inventory){
 
@@ -80,7 +91,7 @@ function showProduct(lnk){
 
 			// <div class="card shadow-sm">
 			card = document.createElement('div');
-			cardclass = "card shadow-sm hover-shadow";
+			cardclass = "card col-4 col-sm-4 shadow";
 			cardarr = card.className.split(" ");
 			if (cardarr.indexOf(cardclass) == -1) {
 				card.className += " " + cardclass;
@@ -160,7 +171,7 @@ function showProduct(lnk){
 
 			// <a href="#" class="btn btn-success btn-price rounded-pill ml-3 font-weight-bold">Rp. 1.400.000</a>
 			price = document.createElement('a');
-			priceclass = "btn btn-success btn-price rounded-pill ml-3 font-weight-bold";
+			priceclass = "btn btn-primary btn-price rounded-pill ml-3 font-weight-bold";
 			pricearr = price.className.split(" ");
 			if (pricearr.indexOf(priceclass) == -1) {
 				price.className += " " + priceclass;

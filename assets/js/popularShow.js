@@ -57,7 +57,24 @@ function showPopular(lnk){
 		idRaw = lnk[i].id;
 		idPop = idRaw.charAt(0).toUpperCase() + idRaw.slice(1);
 		// di uppercase supaya sync dengan _data
-    	bodyPop = document.getElementById(idPop);
+		bodyPop = document.getElementById(idPop);
+
+		popHeader = document.createElement('h2');
+		popclass = "no-headbutt";
+		poparr = popHeader.className.split(" ");
+		if (poparr.indexOf(popclass) == -1) {
+			popHeader.className += " " + popclass;
+		}
+		popHeaderTxt = document.createTextNode(idPop);
+		popHeader.appendChild(popHeaderTxt);
+		bodyPop.appendChild(popHeader);
+		
+		var popColm = document.createElement('div');
+		var popColmclass = "card-columns";
+		var popColmarr = popColm.className.split(" ");
+		if (popColmarr.indexOf(popColmclass) == -1) {
+			popColm.className += " " + popColmclass;
+		}
 
         for (j in lnk[i].inventory){
 
@@ -80,7 +97,7 @@ function showPopular(lnk){
 				}
 				
 				cBqP = document.createElement('p');
-				cBqconP = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.");
+				cBqconP = document.createTextNode("Yuk lengkapi koleksi buku dan produk herbalmu dengan beberapa produk favorit pilihan pelanggan kami. Lihat katalognya, miliki ilmunya, sebarkan manfaatnya.");
 				cBqP.appendChild(cBqconP);
 				cBq.appendChild(cBqP);
 
@@ -101,13 +118,14 @@ function showPopular(lnk){
 
 				cPop.appendChild(cBq);
 
-				bodyPop.appendChild(cPop);
+				popColm.appendChild(cPop);
+				bodyPop.appendChild(popColm);
 
 
 			} // else {
 				
 			cPop = document.createElement('div');
-			cPopclass = "card";
+			cPopclass = "card shadow";
 			cPoparr = cPop.className.split(" ");
 			if (cPoparr.indexOf(cPopclass) == -1) {
 				cPop.className += " " + cPopclass;
@@ -276,13 +294,13 @@ function showPopular(lnk){
 			// }
 			
         
-            
-			bodyPop.appendChild(cPop);
+            popColm.appendChild(cPop);
+			bodyPop.appendChild(popColm);
 			
 			
 		}
 
-		document.getElementById("popularSubQuote").innerHTML = "Someone famous in <cite title='Source Title'>Source Title</cite>";
+		document.getElementById("popularSubQuote").innerHTML = "Popular Products <cite title='Source Title'>2019</cite>";
 
 	}
 
