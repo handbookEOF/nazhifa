@@ -91,7 +91,7 @@ function showProduct(lnk){
 
 			// <div class="card shadow-sm">
 			card = document.createElement('div');
-			cardclass = "card col-12 col-sm-4 shadow";
+			cardclass = "card col-12 col-sm-12 col-md-4 shadow";
 			cardarr = card.className.split(" ");
 			if (cardarr.indexOf(cardclass) == -1) {
 				card.className += " " + cardclass;
