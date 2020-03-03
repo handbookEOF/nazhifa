@@ -1,0 +1,258 @@
+/* JEKYLL MOCKUP COMBINED QUALITY CONTROLED @ 15:09 27/11/2019 */
+/*
+*
+*
+*
+MOBILE FIRST
+*
+*
+*
+*/
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { #nazhifaHeader { height: 1.5rem; margin-top: 2rem; margin-bottom: 2rem; transition: 0.3s; }
+  #display-container .card { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 5px !important; margin-left: 5px !important; }
+  #display-container .card-deck { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 5px !important; margin-left: 5px !important; } }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { #nazhifaHeader { height: 1.5rem; margin-top: 2rem; margin-bottom: 2rem; transition: 0.3s; /* background-color: lightblue; */ }
+  #display-container .card { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 5px !important; margin-left: 5px !important; }
+  #display-container .card-deck { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 5px !important; margin-left: 5px !important; } }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { #nazhifaHeader { height: 4rem; margin-top: 6rem; margin-bottom: 6rem; transition: 0.3s; /* background-color: lightgreen; */ }
+  #display-container .card { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 5px !important; margin-left: 5px !important; }
+  #display-container .card-deck { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 5px !important; margin-left: 5px !important; } }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { #nazhifaHeader { height: 4rem; margin-top: 6rem; margin-bottom: 6rem; transition: 0.3s; /* background-color: pink; */ }
+  #display-container .card { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 5px !important; margin-left: 5px !important; }
+  #display-container .card-deck { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 5px !important; margin-left: 5px !important; } }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { #nazhifaHeader { height: 4rem; margin-top: 6rem; margin-bottom: 6rem; transition: 0.3s; }
+  #display-container .card { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 5px !important; margin-left: 5px !important; }
+  #display-container .card-deck { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 5px !important; margin-left: 5px !important; } }
+
+@font-face { font-family: Laksaman; src: url(/assets/fonts/Laksaman.ttf); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: LaksamanBold; src: url(/assets/fonts/Laksaman-Bold.ttf); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: LaksamanItalic; src: url(/assets/fonts/Laksaman-Italic.ttf); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: LaksamanBoldItalic; src: url(/assets/fonts/Laksaman-BoldItalic.ttf); font-weight: normal; font-style: normal; }
+
+/* body{ background-color: #eef1f2; padding-top: 300px; } */
+.card-deck, .card { display: inline-block !important; }
+
+body { background-image: url("/assets/images/sky-blue-tile.png"); background-repeat: repeat; color: #183644; }
+
+.bg-soft-white { background-image: url("/assets/images/soft-white-tile.png"); background-repeat: repeat; }
+
+#cardMainQuote { border-color: transparent !important; }
+
+footer { font-size: 12px; }
+
+footer .container { padding-top: 25px; }
+
+footer h6 { font-size: 14px; font-weight: bold; }
+
+footer .col-4 { margin-top: 15px; margin-bottom: 15px; }
+
+footer ul { padding-left: 1rem; }
+
+footer.shadow { box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
+
+main .btn { font-size: 12px; padding: 6px; }
+
+main .btn-tertiary { color: #77bbdd !important; background-color: #fff; border-color: transparent; }
+
+main .btn-tertiary:hover { color: #5baddc !important; background-color: #f7fdfd; border-color: transparent; }
+
+main .btn-price { color: #58cc92 !important; background-color: #fff; border-color: transparent; }
+
+main .btn-price:hover { color: #25c977 !important; background-color: #f5fffa; border-color: transparent; }
+
+main .btn-primary { background-color: #77bbdd; border: none; color: #f1f9f9 !important; }
+
+main .btn-primary:hover { background-color: #5baddc; color: #fff !important; }
+
+main .btn { font-size: 14px; }
+
+/*
+.btn-secondary:hover{color:#fff;background-color:#5a6268;border-color:#545b62}.btn-secondary.focus,.btn-secondary:focus{box-shadow:0 0 0 .2rem rgba(130,138,145,.5)}.btn-secondary.disabled,.btn-secondary:disabled{color:#fff;background-color:#6c757d;border-color:#6c757d}.btn-secondary:not(:disabled):not(.disabled).active,.btn-secondary:not(:disabled):not(.disabled):active,.show>.btn-secondary.dropdown-toggle{color:#fff;background-color:#545b62;border-color:#4e555b}.btn-secondary:not(:disabled):not(.disabled).active:focus,.btn-secondary:not(:disabled):not(.disabled):active:focus,.show>.btn-secondary.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(130,138,145,.5)}
+*/
+main .card { font-size: 14px; border-radius: 15px; }
+
+main .card-img-top, main .card-deck .card-footer { border-radius: 15px; }
+
+main .card-deck .card-footer { border-top: none; background-color: rgba(40, 121, 160, 0.05); }
+
+main .card-deck { margin-top: 30px; margin-bottom: 30px; }
+
+.no-headbutt::before { /* So the anchor doesn't headbutt the nav */ display: block; content: " "; /* margin-top: -180px!important; */ height: 180px !important; visibility: hidden; pointer-events: none; }
+
+/*
+*
+*
+WHITE AREA
+*
+*
+*/
+#sidebar-container { background-color: white; }
+
+/*
+*
+*
+ID KATEGORI 
+*
+*
+*/
+#sidebar-container .card { /*harusnya di id in karena card yang lain jadi kena */ }
+
+#sidebar-container { padding-top: 0.5rem; padding-bottom: 1rem; margin-top: 1rem; margin-bottom: 1rem; }
+
+#display-container { padding-top: 0.5rem; padding-bottom: 1rem; margin-top: 1rem; margin-bottom: 1rem; }
+
+.bd-highlight { background-color: rgba(86, 61, 124, 0.15); border: 1px solid rgba(86, 61, 124, 0.15); }
+
+/*
+*
+*
+*
+BOOTSTRAP MODIFICATION
+*
+*
+*
+*/
+/* object-fit: cover in order get proper size image
+jangan lupa bikin mobile friendly nya
+*/
+#herbal, #parfum { font-family: LaksamanBold; }
+
+/*
+*
+*
+*
+SEASONING
+*
+*
+*
+*/
+/* #nazhifaHeader { height: 3em; margin-top: 5em; margin-bottom: 5em; transition: 0.3s; } */
+#pricetag { background: linear-gradient(to right, #ecf5fd 50%, white 50%); background-size: 200% 100%; background-position: right bottom; color: #97d5ac; transition: all .5s ease-out; }
+
+#pricetag.border-left { border-left-color: #ecf5fd !important; border-left-width: 3px !important; border-bottom-left-radius: 3px !important; border-bottom-right-radius: 3px !important; }
+
+#pricetag:hover { background-position: left bottom; color: #28a745; }
+
+#pricetag p { font-weight: bold; font-size: 1.2rem; }
+
+#codewithlove { margin: 0px !important; opacity: 0.25 !important; }
+
+#quotes.container-fluid, #quotes.container-fluid [class^="col-"], #quotes.container-fluid .row { padding: 0 !important; }
+
+#quotes.container-fluid .row { margin: 0 !important; }
+
+#quote { animation-name: bg_slide; animation-duration: 88s; animation-timing-function: linear; animation-delay: 0s; animation-iteration-count: infinite; animation-direction: normal; animation-fill-mode: none; animation-play-state: running; }
+
+#quote { padding: 450px 0 150px 0; background: url(/assets/images/cloud-tile-soothing-600.png) repeat-x; /* ukuran size ini kenapa harus 940 karena background position di @keyframes */ /* background-size: auto 120px; */ overflow: hidden; }
+
+@-webkit-keyframes bg_slide { from { background-position: 0 center; }
+  to { background-position: -939px center; } }
+
+@keyframes bg_slide { from { background-position: 0 center; }
+  to { background-position: -939px center; } }
+
+/* COBA DULU EDIT WIDTH NYA CARD */
+/*#catalogue .card { display: inline-block!important; }*/
+/*#catalogue { .card-deck { width: 100%!important; } }*/
+/*
+.card-deck {
+        .col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+        .col-7, .col-8, .col-9, .col-10, .col-11, .col-12,
+        .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
+        .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12,
+        .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
+        .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12,
+        .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6,
+        .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12,
+        .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6,
+        .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+                padding: 0!important;
+        }
+}
+
+.card-1 {
+-ms-flex: 0 0 8.333333%!important;
+flex: 0 0 8.333333%!important;
+max-width: 8.333333%!important;
+}
+
+.card-2 {
+-ms-flex: 0 0 16.666667%!important;
+flex: 0 0 16.666667%!important;
+max-width: 16.666667%!important;
+}
+
+.card-3 {
+-ms-flex: 0 0 25%!important;
+flex: 0 0 25%!important;
+max-width: 25%!important;
+}
+
+.card-4 {
+-ms-flex: 0 0 33.333333%!important;
+flex: 0 0 33.333333%!important;
+max-width: 33.333333%!important;
+}
+
+.card-5 {
+-ms-flex: 0 0 41.666667%!important;
+flex: 0 0 41.666667%!important;
+max-width: 41.666667%!important;
+}
+
+.card-6 {
+-ms-flex: 0 0 50%!important;
+flex: 0 0 50%!important;
+max-width: 50%!important;
+}
+
+.card-7 {
+-ms-flex: 0 0 58.333333%!important;
+flex: 0 0 58.333333%!important;
+max-width: 58.333333%!important;
+}
+
+.card-8 {
+-ms-flex: 0 0 66.666667%!important;
+flex: 0 0 66.666667%!important;
+max-width: 66.666667%!important;
+}
+
+.card-9 {
+-ms-flex: 0 0 75%!important;
+flex: 0 0 75%!important;
+max-width: 75%!important;
+}
+
+.card-10 {
+-ms-flex: 0 0 83.333333%!important;
+flex: 0 0 83.333333%!important;
+max-width: 83.333333%!important;
+}
+
+.card-11 {
+-ms-flex: 0 0 91.666667%!important;
+flex: 0 0 91.666667%!important;
+max-width: 91.666667%!important;
+}
+
+.card-12 {
+-ms-flex: 0 0 100%!important;
+flex: 0 0 100%!important;
+max-width: 100%!important;
+}
+*/
+
+/*# sourceMappingURL=styles-dev.css.map */
