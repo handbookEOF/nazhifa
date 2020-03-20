@@ -60,7 +60,7 @@ function showPopular(lnk){
 		bodyPop = document.getElementById(idPop);
 
 		popHeader = document.createElement('h2');
-		popclass = "no-headbutt";
+		popclass = "no-headbutt font-weight-bold";
 		poparr = popHeader.className.split(" ");
 		if (poparr.indexOf(popclass) == -1) {
 			popHeader.className += " " + popclass;

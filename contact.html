@@ -60,37 +60,37 @@ NAVIGATION
                                         
                                         
                                             <li class="nav-item">
-                                                <a id="" class="nav-link" href="/nazhifa/">Home</a>
+                                                <a id="schome" class="nav-link" href="/nazhifa/">Home</a>
                                             </li>
                                         
                                         
                                         
                                             <li class="nav-item">
-                                                <a id="" class="nav-link" href="/nazhifa/#buku">Buku</a>
+                                                <a id="scbuku" class="nav-link" href="/nazhifa/#buku">Buku</a>
                                             </li>
                                         
                                         
                                         
                                             <li class="nav-item">
-                                                <a id="" class="nav-link" href="/nazhifa/#busana">Busana</a>
+                                                <a id="scbusana" class="nav-link" href="/nazhifa/#busana">Busana</a>
                                             </li>
                                         
                                         
                                         
                                             <li class="nav-item">
-                                                <a id="" class="nav-link" href="/nazhifa/#herbal">Herbal</a>
+                                                <a id="scherbal" class="nav-link" href="/nazhifa/#herbal">Herbal</a>
                                             </li>
                                         
                                         
                                         
                                             <li class="nav-item">
-                                                <a id="" class="nav-link" href="/nazhifa/#Popular">Popular</a>
+                                                <a id="scpopular" class="nav-link" href="/nazhifa/#Popular">Popular</a>
                                             </li>
                                         
                                         
                                         
                                             <li class="nav-item">
-                                                <a id="" class="nav-link" href="/nazhifa/#About">About</a>
+                                                <a id="scabout" class="nav-link" href="/nazhifa/#About">About</a>
                                             </li>
                                         
                                         
@@ -209,29 +209,17 @@ Untuk saat ini toko kami masih bersifat online. Kami melayani pembelian langsung
 
 
     <script>
-                $("#scherbal").click(function() {
-                        $('html, body').animate({
-                                scrollTop: $("#herbal").offset().top
-                        }, 2000);
-                });
-                $("#scparfum").click(function() {
-                        $('html, body').animate({
-                                scrollTop: $("#parfum").offset().top
-                        }, 2000);
-                });
-    </script>
 
-    <script>
         // When the user scrolls down 50px from the top of the document, resize the header's font size
         window.onscroll = function() {
                 var colXs = {
                         maxOfWidth:window.matchMedia("(max-width: 575px)"),
-                        height:"0.5rem",
-                        marginTop: "10px",
-                        marginBottom: "0px",
-                        heightTo:"1.5rem",
-                        marginTopTo: "2rem",
-                        marginBottomTo: "2rem"
+                        height:"0.8rem",
+                        marginTop: "1.265rem",
+                        marginBottom: "1.265rem",
+                        heightTo:"1.865rem",
+                        marginTopTo: "4rem",
+                        marginBottomTo: "4rem"
                 };
                 var colSm = {
                         maxOfWidth:window.matchMedia("(max-width: 768px)"),
@@ -300,7 +288,43 @@ Untuk saat ini toko kami masih bersifat online. Kami melayani pembelian langsung
           }
         }
 
+        
 
+
+    </script>
+
+    <script>
+        // This is for animate the click scroll
+        $("#scbuku").click(function() {
+                $('html, body').animate({
+                        scrollTop: $("#buku").offset().top
+                }, 2000);
+        });
+        $("#scpopular").click(function() {
+                $('html, body').animate({
+                        scrollTop: $("#Popular").offset().top
+                }, 2000);
+        });
+
+        // In case this code doesn't globally work, perhaps use this one
+        /*
+        var $container = $('div'),
+        $scrollTo = $('#row_8');
+
+        $container.scrollTop(
+        $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+        );
+
+        // Or you can animate the scrolling:
+        $container.animate({
+        scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+        });​
+        */
+
+        // Try to automaticly collapse the navbar
+        $('.navbar-collapse a').click(function(){
+                $(".navbar-collapse").collapse('hide');
+        });
     </script>
   </body>
 </html>

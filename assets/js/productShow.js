@@ -82,7 +82,7 @@ function showProduct(lnk){
 		idbody = document.getElementById(idp);
 
 		hdrId = document.createElement("h2");
-		hdrIdClass = "no-headbutt";
+		hdrIdClass = "no-headbutt font-weight-bold";
 		hdrIdArr = hdrId.className.split(" ");
 		if (hdrIdArr.indexOf(hdrIdClass) == -1) {
 			hdrId.className += " " + hdrIdClass;
@@ -91,9 +91,23 @@ function showProduct(lnk){
 		hdrId.appendChild(hdrIdTxt);
 		idbody.appendChild(hdrId);
 		
+		cardDeck = document.createElement('div');
+		cardDeckClass = "card-deck";
+		cardDeckArr = cardDeck.className.split(" ");
+		if (cardDeckArr.indexOf(cardDeckClass) == -1) {
+			cardDeck.className += " " + cardDeckClass;
+		}
+
+		rowDeck = document.createElement('div');
+		rowDeckClass = "row";
+		rowDeckArr = rowDeck.className.split(" ");
+		if (rowDeckArr.indexOf(rowDeckClass) == -1) {
+			rowDeck.className += " " + rowDeckClass;
+		}
+
 		for (j in lnk[i].inventory){
 			
-			var k = j % 3;
+			/*var k = j % 3;
 			if (k == 0){
 				// <div class="card-deck">
 				cardDeck = document.createElement('div');
@@ -109,10 +123,10 @@ function showProduct(lnk){
 				if (rowDeckArr.indexOf(rowDeckClass) == -1) {
 					rowDeck.className += " " + rowDeckClass;
 				}
-			}
+			}*/
 
 			colCard = document.createElement('div');
-			colCardClass = "col-12 col-sm-4 col-md-4";
+			colCardClass = "col-12 col-sm-6 col-md-4";
 			colCardArr = colCard.className.split(" ");
 			if (colCardArr.indexOf(colCardClass) == -1) {
 				colCard.className += " " + colCardClass;
@@ -145,6 +159,46 @@ function showProduct(lnk){
 				cardBody.className += " " + cardBodyClass;
 			}
 
+			/* cardTitlebox = document.createElement('div');
+			cardTitleboxClass = "card-title-box";
+			cardTitleboxArr = cardTitlebox.className.split(" ");
+			if (cardTitleboxArr.indexOf(cardTitleboxClass) == -1) {
+				cardTitlebox.className += " " + cardTitleboxClass;
+			}
+			
+			cardTitle = document.createElement('h5');
+			cardTitleClass = "card-title";
+			cardTitleArr = cardTitle.className.split(" ");
+			if (cardTitleArr.indexOf(cardTitleClass) == -1) {
+				cardTitle.className += " " + cardTitleClass;
+			}
+			// cardTitle.onclick = productClickHandler(parseInt(j));
+			cardTitleTxt = document.createTextNode(lnk[i].inventory[j].title);
+			cardTitle.appendChild(cardTitleTxt);
+			cardTitlebox.appendChild(cardTitle);
+
+			cardBody.appendChild(cardTitlebox);
+
+			cardSubtbox = document.createElement('div');
+			cardSubtboxClass = "card-subtitle-box";
+			cardSubtboxArr = cardSubtbox.className.split(" ");
+			if (cardSubtboxArr.indexOf(cardSubtboxClass) == -1) {
+				cardSubtbox.className += " " + cardSubtboxClass;
+			}
+
+			cardSubt = document.createElement('h6');
+			cardSubtClass = "card-subtitle text-muted";
+			cardSubtArr = cardSubt.className.split(" ");
+			if (cardSubtArr.indexOf(cardSubtClass) == -1) {
+				cardSubt.className += " " + cardSubtClass;
+			}
+			// cardSubt.onclick = productClickHandler(parseInt(j));
+			cardSubtTxt = document.createTextNode(lnk[i].inventory[j].title);
+			cardSubt.appendChild(cardSubtTxt);
+			cardSubtbox.appendChild(cardSubt);
+
+			cardBody.appendChild(cardSubtbox); */
+
 			cardTitle = document.createElement('h5');
 			cardTitleClass = "card-title";
 			cardTitleArr = cardTitle.className.split(" ");
@@ -156,7 +210,7 @@ function showProduct(lnk){
 			cardTitle.appendChild(cardTitleTxt);
 			cardBody.appendChild(cardTitle);
 
-			cardSubt = document.createElement('h5');
+			cardSubt = document.createElement('h6');
 			cardSubtClass = "card-subtitle mb-2 text-muted";
 			cardSubtArr = cardSubt.className.split(" ");
 			if (cardSubtArr.indexOf(cardSubtClass) == -1) {
@@ -165,7 +219,7 @@ function showProduct(lnk){
 			// cardSubt.onclick = productClickHandler(parseInt(j));
 			cardSubtTxt = document.createTextNode(lnk[i].inventory[j].title);
 			cardSubt.appendChild(cardSubtTxt);
-			cardBody.appendChild(cardSubt);
+			cardBody.appendChild(cardSubt); 
 
 			card.appendChild(cardBody);
 
