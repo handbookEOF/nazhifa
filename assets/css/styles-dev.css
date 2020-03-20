@@ -249,7 +249,7 @@ MOBILE FIRST
   main .card h6 { font-size: 14px; }
   #cardMainQuote .blockquote { font-size: 16px; }
   #quotes .blockquote { font-size: 1.025rem; }
-  #quote { padding: 300px 0 300px 0; background: url(/assets/images/cloud-tile-soothing-600.png) repeat-x; /* ukuran size ini kenapa harus 940 karena background position di @keyframes */ /* background-size: auto 120px; */ overflow: hidden; }
+  #quote { padding: 300px 0 300px 0; overflow: hidden; }
   #nazhifaHeader { height: 1.865rem; margin-top: 4rem; margin-bottom: 4rem; transition: 0.3s; }
   #display-container .card { /*harusnya di id in karena card yang lain jadi kena */ margin-right: 5px !important; margin-left: 5px !important; }
   #display-container .card h5 { font-size: 16px !important; font-weight: bold !important; }
